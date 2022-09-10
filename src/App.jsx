@@ -3,31 +3,31 @@ import 'animate.css';
 
 
 function App() {
-  const [subject, setsubject] = useState("");
+  const [subject2, setsubject2] = useState("");
   let statements = [
-    `现在，解决${subject}的问题，是非常非常重要的。`,
-    `我们不得不面对一个非常尴尬的事实，${subject}。`,
-    `${subject}的发生，到底需要如何做到，不${subject}的发生，又会如何产生。 `,
-    `而这些并不是完全重要，更加重要的问题是${subject}`,
-    `${subject}，到底应该如何实现。 `,
-    `带着这些问题，我们来审视一下${subject}。 `,
-    `所谓${subject}，关键是${subject}需要如何写。 `,
+    `现在，解决${subject2}的问题，是非常非常重要的。`,
+    `我们不得不面对一个非常尴尬的事实，${subject2}。`,
+    `${subject2}的发生，到底需要如何做到，不${subject2}的发生，又会如何产生。 `,
+    `而这些并不是完全重要，更加重要的问题是${subject2}`,
+    `${subject2}，到底应该如何实现。 `,
+    `带着这些问题，我们来审视一下${subject2}。 `,
+    `所谓${subject2}，关键是${subject2}需要如何写。 `,
     `我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 `,
     `问题的关键究竟为何？ `,
-    `${subject}因何而发生？ `,
+    `${subject2}因何而发生？ `,
     `每个人都不得不面对这些问题。 在面对这种问题时， `,
     `一般来讲，我们都必须务必慎重的考虑考虑。 `,
-    `要想清楚，${subject}，到底是一种怎么样的存在。 `,
-    `了解清楚${subject}到底是一种怎么样的存在，是解决一切问题的关键。 `,
-    `就我个人来说，${subject}对我的意义，不能不说非常重大。 `,
+    `要想清楚，${subject2}，到底是一种怎么样的存在。 `,
+    `了解清楚${subject2}到底是一种怎么样的存在，是解决一切问题的关键。 `,
+    `就我个人来说，${subject2}对我的意义，不能不说非常重大。 `,
     `本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。 `,
-    `${subject}，发生了会如何，不发生又会如何。 `,
+    `${subject2}，发生了会如何，不发生又会如何。 `,
     `在这种困难的抉择下，本人思来想去，寝食难安。 `,
-    `生活中，若${subject}出现了，我们就不得不考虑它出现了的事实。 `,
+    `生活中，若${subject2}出现了，我们就不得不考虑它出现了的事实。 `,
     `这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 `,
     `我们都知道，只要有意义，那么就必须慎重考虑。 `,
-    `可是，即使是这样，${subject}的出现仍然代表了一定的意义。 `,
-    `对我个人而言，${subject}不仅仅是一个重大的事件，还可能会改变我的人生。 `,
+    `可是，即使是这样，${subject2}的出现仍然代表了一定的意义。 `,
+    `对我个人而言，${subject2}不仅仅是一个重大的事件，还可能会改变我的人生。 `,
   ];
 
   let quotes = [
@@ -138,7 +138,7 @@ function App() {
   const [bruh, setbruh] = useState("");
   const [explain, setexplain] = useState("");
   const [select, setSelect] = useState(2);
-  const [subject2, setsubject2] = useState("");
+  const [subject, setsubject] = useState("");
   const [p2, setp2] = useState("");
 
   const generate = () => {
@@ -156,6 +156,10 @@ function App() {
       if (subject2 == "") {
         setparagraph("请输入内容,谢谢")
       }
+      if (subject2 == "amongus") {
+        setparagraph("SUSUSUSUSUS")
+      }
+      
     }
     else if (select == 2) {
       setparagraph(`${subject}到底是怎么回事？得知真相后大家都蒙圈了小编认为，这一定是还有其他原因的。${subject}${bruh}，其实就是${explain}，大家可能会很惊讶${subject}怎么会${bruh}呢？但事实就是这样，小编也感到非常惊讶。这就是关于${subject}${bruh}的事情了，大家有什么想法呢，欢迎在评论区告诉小编一起讨论哦`)
